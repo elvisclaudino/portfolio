@@ -1,0 +1,38 @@
+.aside__bar {
+  display: flex;
+  font-family: $font;
+  font-weight: 500;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.icon__menu-img {
+  cursor: pointer;
+  height: 36px;
+  margin-right: 15px;
+  margin-top: 15px;
+  width: 36px;
+}
+
+#menu__bar {
+  background-color: $secondary-color;
+  height: 100vh;
+  transition: 0.3s all;
+  width: 0px;
+
+  ul li {
+    font-size: 18px;
+    list-style: none;
+    margin-top: 15px;
+
+    a {
+      color: $paragraph-color;
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

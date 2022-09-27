@@ -1,0 +1,127 @@
+.container__header {
+  background-image: url("../img/background/background-header.png");
+}
+
+.container__info {
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  .header__title {
+    color: $primary-color;
+    font-family: $font;
+    font-size: 70px;
+    font-weight: 800;
+  }
+
+  .header__paragraph {
+    color: $secondary-color;
+    font-family: $font;
+    font-size: 33px;
+    font-weight: 500;
+    margin-top: -10px;
+  }
+
+  .header__image {
+    margin-top: -30px;
+    width: 400px;
+  }
+
+  .header__description {
+    margin-bottom: 25px;
+    a {
+      text-decoration: none;
+    }
+    .header__description-paragraph {
+      color: white;
+      cursor: pointer;
+      font-size: 25px;
+      font-family: $font;
+      font-weight: 500;
+      transition: 0.3s all;
+
+      &:hover {
+        color: $paragraph-color;
+      }
+    }
+    .header__description-icon {
+      cursor: pointer;
+      margin-top: -30px;
+      width: 60px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .container__info {
+    .header__title {
+      font-size: 50px;
+    }
+    .header__paragraph {
+      font-size: 23px;
+    }
+
+    .header__description {
+      margin-bottom: 15px;
+
+      .header__description-paragraph {
+        font-size: 20px;
+      }
+      .header__description-icon {
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container__info {
+    .header__title {
+      font-size: 40px;
+    }
+    .header__paragraph {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 522px) {
+  .container__info {
+    .header__title {
+      font-size: 30px;
+    }
+    .header__paragraph {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container__info {
+    .header__title {
+      font-size: 28px;
+    }
+    .header__paragraph {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-height: 800px) {
+  .container__info {
+    padding-top: 80px;
+
+    .header__description {
+      margin-bottom: 15px;
+
+      .header__description-paragraph {
+        font-size: 20px;
+      }
+      .header__description-icon {
+        width: 50px;
+      }
+    }
+  }
+}

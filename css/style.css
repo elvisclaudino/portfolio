@@ -19,20 +19,20 @@
   font-weight: 500;
   position: fixed;
   right: 0;
-  top: 0;
+  top: 10px;
 }
 
 .icon__menu-img {
   cursor: pointer;
   height: 36px;
-  margin-right: 15px;
-  margin-top: 15px;
+  margin-right: 10px;
   width: 36px;
 }
 
 #menu__bar {
-  background-color: #293a66;
-  height: 100vh;
+  background-color: black;
+  box-shadow: 5px 5px 10px black;
+  height: auto;
   transition: 0.3s all;
   width: 0px;
 }
@@ -256,35 +256,32 @@
 }
 
 @media (max-width: 720px) {
-  .container__about-description .container__about-image {
-    width: 100px;
-  }
   .container__about-description .container__about-text {
     align-items: flex-start;
     justify-content: center;
     width: auto;
     height: auto;
   }
-  .container__about-description .container__about-paragraph {
+  .container__about-description .container__about-text .container__about-image {
+    width: 100px;
+  }
+  .container__about-description .container__about-text .container__about-paragraph {
     font-size: 14px;
     width: 300px;
     line-height: 20px;
-  }
-  .container__about-description .profile__title-pin {
-    font-size: 16px;
-  }
-  .container__about-description .container__about-specs .profile__title-pin {
-    font-size: 14px;
-  }
-  .container__about-description .container__about-specs .profile__desc {
-    font-size: 14px;
-    width: 200px;
   }
   .container__about-description .container__about-specs .container__about-left {
     margin-right: 20px;
   }
   .container__about-description .container__about-specs .profile__title {
     font-size: 18px;
+  }
+  .container__about-description .container__about-specs .profile__desc {
+    font-size: 14px;
+    width: 200px;
+  }
+  .container__about-description .container__about-specs .profile__title-pin {
+    font-size: 14px;
   }
   .about__description .about__description-title {
     font-size: 25px;
@@ -294,24 +291,27 @@
   }
 }
 @media (max-width: 500px) {
-  .container__about-info {
+  .container__about {
+    background-image: url(../img/background/background-about-mobile.png);
+  }
+  .container__about .container__about-info {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
   }
-  .container__about {
-    background-image: url(../img/background/background-about-mobile.png);
+  .container__about .container__about-info .container__about-description {
+    margin-bottom: 40px;
   }
-  .container__about .container__about-text {
+  .container__about .container__about-info .container__about-description .container__about-text {
     align-items: center;
     flex-direction: column;
     margin-top: -40px;
   }
-  .container__about .container__about-image {
+  .container__about .container__about-info .container__about-description .container__about-text .container__about-image {
     margin-bottom: 20px;
   }
-  .container__about .container__about-info .container__about-description .container__about-paragraph {
+  .container__about .container__about-info .container__about-description .container__about-text .container__about-paragraph {
     width: auto;
   }
   .container__about .container__about-info .container__about-description .container__about-specs {
@@ -327,9 +327,6 @@
     margin-top: -4px;
     font-size: 14px;
   }
-  .container__about-description {
-    margin-bottom: 40px;
-  }
   .about__description .about__description-title {
     font-size: 20px;
     margin: 30px;
@@ -339,14 +336,14 @@
   }
 }
 @media (max-width: 316px) {
+  .container__about-description {
+    margin-bottom: 60px;
+  }
   .about__description .about__description-desc {
     font-size: 13px;
   }
   .about__description .about__description-icon {
     width: 40px;
-  }
-  .container__about-description {
-    margin-bottom: 60px;
   }
 }
 @media (max-width: 280px) {
@@ -361,6 +358,124 @@
   .about__description {
     margin-top: -80px;
   }
+}
+.container__portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.container__portfolio-item {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 300px);
+}
+
+.card__content {
+  background: center/cover no-repeat;
+  border-radius: 10px;
+}
+.card__content .card__description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+.card__content .card__description:hover {
+  opacity: 100%;
+}
+.card__content .card__description .card__description-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  width: 200px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+.card__content .card__description .card__description-botton {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 40px;
+  border: 2px solid #001551;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  transition: 0.5s;
+}
+.card__content .card__description .card__description-botton:hover {
+  background-color: #001551;
+}
+
+.card__content:nth-child(1) {
+  background-image: url(../img/cards/seupet-image.png);
+  grid-column: 1/2;
+}
+.card__content:nth-child(1):hover {
+  background-image: none;
+  background-color: rgba(8, 21, 81, 0.5);
+}
+
+.card__content:nth-child(2) {
+  background-image: url(../img/cards/portfolio-image.png);
+  grid-template-columns: 2/3;
+}
+.card__content:nth-child(2):hover {
+  background-image: none;
+  background-color: rgba(8, 21, 81, 0.5);
+}
+
+.card__content:nth-child(3) {
+  background-image: url(../img/cards/soundbox-image.png);
+  grid-column: 3/3;
+}
+.card__content:nth-child(3):hover {
+  background-image: none;
+  background-color: rgba(8, 21, 81, 0.5);
+}
+
+.card__content:nth-child(4) {
+  background-image: url(../img/cards/onebitx-image.png);
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.card__content:nth-child(4):hover {
+  background-image: none;
+  background-color: rgba(8, 21, 81, 0.5);
+}
+
+.card__content:nth-child(5) {
+  background-image: url(../img/cards/register-onebitx-image.png);
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.card__content:nth-child(5):hover {
+  background-image: none;
+  background-color: rgba(8, 21, 81, 0.5);
+}
+
+.card__content:nth-child(6) {
+  background-image: url(../img/cards/apeperia-image.png);
+  grid-column: 3/3;
+  grid-row: 2/3;
+}
+.card__content:nth-child(6):hover {
+  background-image: none;
+  background-color: rgba(8, 21, 81, 0.5);
+}
+
+.card__content:nth-child(7) {
+  background-image: url(../img/cards/expressoes-regulares-image.png);
+  grid-column: 1/2;
+  grid-row: 3/3;
+}
+.card__content:nth-child(7):hover {
+  background-image: none;
+  background-color: rgba(8, 21, 81, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

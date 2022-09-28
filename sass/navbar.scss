@@ -4,20 +4,20 @@
   font-weight: 500;
   position: fixed;
   right: 0;
-  top: 0;
+  top: 10px;
 }
 
 .icon__menu-img {
   cursor: pointer;
   height: 36px;
-  margin-right: 15px;
-  margin-top: 15px;
+  margin-right: 10px;
   width: 36px;
 }
 
 #menu__bar {
-  background-color: $secondary-color;
-  height: 100vh;
+  background-color: black;
+  box-shadow: 5px 5px 10px black;
+  height: auto;
   transition: 0.3s all;
   width: 0px;
 

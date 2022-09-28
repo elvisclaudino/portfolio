@@ -1,0 +1,129 @@
+.container__portfolio {
+  display: flex;
+  justify-content: center;
+}
+.container__portfolio-item {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 300px);
+}
+
+.card__content {
+  background: center / cover no-repeat;
+  border-radius: 10px;
+
+  .card__description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 100%;
+    }
+
+    .card__description-text {
+      color: white;
+      font-family: $font;
+      font-size: 16px;
+      width: 200px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    .card__description-botton {
+      font-family: $font;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 10px 40px;
+      border: 2px solid $primary-color;
+      border-radius: 30px;
+      background-color: transparent;
+      color: white;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.card__content:nth-child(1) {
+  background-image: url(../img/cards/seupet-image.png);
+  grid-column: 1/2;
+
+  &:hover {
+    background-image: none;
+    background-color: rgba(8, 21, 81, 0.5);
+  }
+}
+
+.card__content:nth-child(2) {
+  background-image: url(../img/cards/portfolio-image.png);
+  grid-template-columns: 2/3;
+
+  &:hover {
+    background-image: none;
+    background-color: rgba(8, 21, 81, 0.5);
+  }
+}
+
+.card__content:nth-child(3) {
+  background-image: url(../img/cards/soundbox-image.png);
+  grid-column: 3/3;
+
+  &:hover {
+    background-image: none;
+    background-color: rgba(8, 21, 81, 0.5);
+  }
+}
+
+.card__content:nth-child(4) {
+  background-image: url(../img/cards/onebitx-image.png);
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  &:hover {
+    background-image: none;
+    background-color: rgba(8, 21, 81, 0.5);
+  }
+}
+
+.card__content:nth-child(5) {
+  background-image: url(../img/cards/register-onebitx-image.png);
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  &:hover {
+    background-image: none;
+    background-color: rgba(8, 21, 81, 0.5);
+  }
+}
+
+.card__content:nth-child(6) {
+  background-image: url(../img/cards/apeperia-image.png);
+  grid-column: 3/3;
+  grid-row: 2/3;
+
+  &:hover {
+    background-image: none;
+    background-color: rgba(8, 21, 81, 0.5);
+  }
+}
+
+.card__content:nth-child(7) {
+  background-image: url(../img/cards/expressoes-regulares-image.png);
+  grid-column: 1/2;
+  grid-row: 3/3;
+
+  &:hover {
+    background-image: none;
+    background-color: rgba(8, 21, 81, 0.5);
+  }
+}

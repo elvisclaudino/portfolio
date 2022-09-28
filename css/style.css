@@ -382,7 +382,6 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 0.3s;
 }
 .card__content .card__description:hover {
   opacity: 100%;
@@ -474,6 +473,26 @@
   grid-row: 3/3;
 }
 .card__content:nth-child(7):hover {
+  background-image: none;
+  background-color: rgba(8, 21, 81, 0.5);
+}
+
+.card__content:nth-child(8) {
+  background-image: url(../img/cards/fruta&fruto-image.png);
+  grid-column: 2/3;
+  grid-row: 3/3;
+}
+.card__content:nth-child(8):hover {
+  background-image: none;
+  background-color: rgba(8, 21, 81, 0.5);
+}
+
+.card__content:nth-child(9) {
+  background-image: url(../img/cards/barbearia-alura-image.png);
+  grid-column: 3/3;
+  grid-row: 3/3;
+}
+.card__content:nth-child(9):hover {
   background-image: none;
   background-color: rgba(8, 21, 81, 0.5);
 }

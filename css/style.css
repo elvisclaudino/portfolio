@@ -265,7 +265,9 @@
   .container__about-description .container__about-text .container__about-image {
     width: 100px;
   }
-  .container__about-description .container__about-text .container__about-paragraph {
+  .container__about-description
+    .container__about-text
+    .container__about-paragraph {
     font-size: 14px;
     width: 300px;
     line-height: 20px;
@@ -303,27 +305,53 @@
   .container__about .container__about-info .container__about-description {
     margin-bottom: 40px;
   }
-  .container__about .container__about-info .container__about-description .container__about-text {
+  .container__about
+    .container__about-info
+    .container__about-description
+    .container__about-text {
     align-items: center;
     flex-direction: column;
     margin-top: -40px;
   }
-  .container__about .container__about-info .container__about-description .container__about-text .container__about-image {
+  .container__about
+    .container__about-info
+    .container__about-description
+    .container__about-text
+    .container__about-image {
     margin-bottom: 20px;
   }
-  .container__about .container__about-info .container__about-description .container__about-text .container__about-paragraph {
+  .container__about
+    .container__about-info
+    .container__about-description
+    .container__about-text
+    .container__about-paragraph {
     width: auto;
   }
-  .container__about .container__about-info .container__about-description .container__about-specs {
+  .container__about
+    .container__about-info
+    .container__about-description
+    .container__about-specs {
     flex-wrap: nowrap;
   }
-  .container__about .container__about-info .container__about-description .container__about-specs .container__about-right {
+  .container__about
+    .container__about-info
+    .container__about-description
+    .container__about-specs
+    .container__about-right {
     margin-top: -4px;
   }
-  .container__about .container__about-info .container__about-description .container__about-specs .profile__desc {
+  .container__about
+    .container__about-info
+    .container__about-description
+    .container__about-specs
+    .profile__desc {
     width: auto;
   }
-  .container__about .container__about-info .container__about-description .container__about-specs .profile__title-pin {
+  .container__about
+    .container__about-info
+    .container__about-description
+    .container__about-specs
+    .profile__title-pin {
     margin-top: -4px;
     font-size: 14px;
   }
@@ -380,7 +408,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   opacity: 0;
 }
 .card__content .card__description:hover {
@@ -390,7 +417,6 @@
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  width: 200px;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
@@ -402,7 +428,6 @@
   padding: 10px 40px;
   border: 2px solid #001551;
   border-radius: 30px;
-  background-color: transparent;
   color: white;
   transition: 0.5s;
 }
@@ -415,7 +440,6 @@
   grid-column: 1/2;
 }
 .card__content:nth-child(1):hover {
-  background-image: none;
   background-color: rgba(8, 21, 81, 0.5);
 }
 
@@ -424,7 +448,6 @@
   grid-template-columns: 2/3;
 }
 .card__content:nth-child(2):hover {
-  background-image: none;
   background-color: rgba(8, 21, 81, 0.5);
 }
 
@@ -433,7 +456,6 @@
   grid-column: 3/3;
 }
 .card__content:nth-child(3):hover {
-  background-image: none;
   background-color: rgba(8, 21, 81, 0.5);
 }
 
@@ -443,7 +465,6 @@
   grid-row: 2/3;
 }
 .card__content:nth-child(4):hover {
-  background-image: none;
   background-color: rgba(8, 21, 81, 0.5);
 }
 
@@ -453,7 +474,6 @@
   grid-row: 2/3;
 }
 .card__content:nth-child(5):hover {
-  background-image: none;
   background-color: rgba(8, 21, 81, 0.5);
 }
 
@@ -463,7 +483,6 @@
   grid-row: 2/3;
 }
 .card__content:nth-child(6):hover {
-  background-image: none;
   background-color: rgba(8, 21, 81, 0.5);
 }
 
@@ -473,7 +492,6 @@
   grid-row: 3/3;
 }
 .card__content:nth-child(7):hover {
-  background-image: none;
   background-color: rgba(8, 21, 81, 0.5);
 }
 
@@ -483,7 +501,6 @@
   grid-row: 3/3;
 }
 .card__content:nth-child(8):hover {
-  background-image: none;
   background-color: rgba(8, 21, 81, 0.5);
 }
 

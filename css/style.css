@@ -329,10 +329,15 @@
   }
   .about__description .about__description-title {
     font-size: 20px;
-    margin: 30px;
+    margin: 20px;
   }
   .about__description .about__description-desc {
     font-size: 16px;
+  }
+}
+@media (max-width: 336px) {
+  .about__description .about__description-title {
+    margin: 40px;
   }
 }
 @media (max-width: 316px) {
@@ -361,7 +366,8 @@
 }
 .container__portfolio {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container__portfolio-item {
@@ -506,6 +512,23 @@
   box-shadow: 0 5px 15px black;
 }
 
+.portfolio__button-github {
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  border: 2px solid #001551;
+  color: #001551;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+.portfolio__button-github:hover {
+  background-color: #001551;
+  color: white;
+  box-shadow: 0 5px 15px black;
+}
+
 @media (max-width: 1000px) {
   .container__portfolio-item {
     grid-template-columns: repeat(2, 300px);
@@ -634,6 +657,160 @@
   .container__portfolio-item {
     grid-template-columns: 200px;
     grid-template-rows: repeat(9, 200px);
+  }
+  .portfolio__button-github {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+}
+.container__footer {
+  min-height: auto;
+}
+
+.footer__description {
+  margin-top: 40px;
+}
+.footer__description .footer__description-title {
+  color: #001551;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+.footer__description a {
+  text-decoration: none;
+}
+.footer__description .footer__description-desc {
+  color: #293a66;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -30px;
+  transition: 0.3s;
+}
+.footer__description .footer__description-desc:hover {
+  color: #001551;
+}
+.footer__description .footer__description-icon {
+  cursor: pointer;
+  margin-top: -30px;
+  width: 60px;
+}
+
+.container__footer-items {
+  margin-top: 20px;
+  background-color: #001551;
+}
+
+.contact__infos {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+.contact__infos .contact__infos-item {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.contact__infos .contact__infos-item .contact__title {
+  font-family: "Montserrat", sans-serif;
+  color: #afc0ff;
+  font-weight: 600;
+  font-size: 20px;
+}
+.contact__infos .contact__infos-item .contact__paragraph {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.contact__links .button__link {
+  display: flex;
+  padding: 16px;
+  border-radius: 100%;
+}
+
+.container__footer-copy {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.container__footer-copy .copy__text {
+  font-family: "Montserrat", sans-serif;
+  color: #afc0ff;
+  font-weight: 700;
+}
+
+@media (max-width: 766px) {
+  .contact__infos .contact__infos-item .contact__title {
+    font-size: 16px;
+  }
+  .contact__infos .contact__infos-item .contact__paragraph {
+    font-size: 14px;
+  }
+  .contact__links .button__link {
+    padding: 16px;
+  }
+  .contact__links .button__link .contact__links-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 720px) {
+  .footer__description .footer__description-title {
+    font-size: 25px;
+  }
+  .footer__description .footer__description-desc {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .footer__description .footer__description-title {
+    margin: 20px;
+    font-size: 20px;
+  }
+  .footer__description .footer__description-desc {
+    font-size: 16px;
+  }
+  .contact__infos {
+    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__infos .contact__infos-item {
+    margin-top: 50px;
+    width: auto;
+  }
+  .contact__links {
+    margin-top: 20px;
+  }
+  .contact__links .button__link {
+    padding: 12px;
+  }
+  .contact__links .button__link .contact__links-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .container__footer-copy .copy__text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .contact__links {
+    margin-top: 20px;
+  }
+  .contact__links .button__link {
+    padding: 6px;
+  }
+  .contact__links .button__link .contact__links-icon {
+    width: 20px;
+    height: 20px;
   }
 }
 

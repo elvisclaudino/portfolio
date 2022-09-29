@@ -208,11 +208,19 @@
   .about__description {
     .about__description-title {
       font-size: 20px;
-      margin: 30px;
+      margin: 20px;
     }
 
     .about__description-desc {
       font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 336px) {
+  .about__description {
+    .about__description-title {
+      margin: 40px;
     }
   }
 }

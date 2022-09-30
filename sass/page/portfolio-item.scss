@@ -15,6 +15,28 @@
   margin-top: -120px;
 }
 
+.portfolio__item-description--js {
+  width: 60%;
+  .portfolio__item-description--title {
+    color: $primary-color;
+    font-size: 40px;
+    font-family: $font;
+    font-weight: 800;
+  }
+  .portfolio__item-description--subtitle {
+    color: $secondary-color;
+    font-size: 30px;
+    font-family: $font;
+    font-weight: 500;
+  }
+
+  .portfolio__item-description--paragraph {
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
 .portfolio__item-description {
   margin-top: -40px;
   width: 60%;
@@ -28,6 +50,12 @@
     color: $secondary-color;
     font-size: 30px;
     font-family: $font;
+    font-weight: 500;
+  }
+
+  .portfolio__item-description--paragraph {
+    font-family: $font;
+    font-size: 16px;
     font-weight: 500;
   }
 }
@@ -73,7 +101,8 @@
 }
 
 @media (max-width: 1000px) {
-  .portfolio__item-description {
+  .portfolio__item-description,
+  .portfolio__item-description--js {
     margin-top: -20px;
     width: 80%;
   }
@@ -92,5 +121,8 @@
   .portfolio__button-code {
     font-size: 16px;
     padding: 10px 10px;
+  }
+  .portfolio__item-description--js .portfolio__item-description--title {
+    font-size: 30px;
   }
 }

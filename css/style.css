@@ -839,6 +839,27 @@
   margin-top: -120px;
 }
 
+.portfolio__item-description--js {
+  width: 60%;
+}
+.portfolio__item-description--js .portfolio__item-description--title {
+  color: #001551;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.portfolio__item-description--js .portfolio__item-description--subtitle {
+  color: #293a66;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.portfolio__item-description--js .portfolio__item-description--paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .portfolio__item-description {
   margin-top: -40px;
   width: 60%;
@@ -853,6 +874,11 @@
   color: #293a66;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.portfolio__item-description .portfolio__item-description--paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -894,7 +920,8 @@
 }
 
 @media (max-width: 1000px) {
-  .portfolio__item-description {
+  .portfolio__item-description,
+.portfolio__item-description--js {
     margin-top: -20px;
     width: 80%;
   }
@@ -912,6 +939,95 @@
   .portfolio__button-code {
     font-size: 16px;
     padding: 10px 10px;
+  }
+  .portfolio__item-description--js .portfolio__item-description--title {
+    font-size: 30px;
+  }
+}
+:root {
+  --cinza: #aaa;
+  --vermelha: #e93d50;
+  --vermelha-escura: #af303f;
+  --branca: #fff;
+  --luz: rgb(229, 255, 0);
+}
+
+h1 {
+  color: var(--branca);
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.teclado {
+  margin-top: -80px;
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
+  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--cinza);
+  color: var(--vermelha);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--vermelha);
+  border: 4px solid var(--vermelha);
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+
+@media (max-width: 500px) {
+  .teclado {
+    box-shadow: 6px 8px 0 1px #666, 10px 10px 10px #000;
+    width: 300px;
+    height: 300px;
+  }
+  .tecla {
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .teclado {
+    width: 200px;
+    height: 200px;
+  }
+  .tecla {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+    line-height: 20px;
   }
 }
 

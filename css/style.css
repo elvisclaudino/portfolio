@@ -13,16 +13,25 @@
   color: black;
 }
 
+.link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: white;
+}
+
 .aside__bar {
   display: flex;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   position: fixed;
-  right: 0;
-  top: 10px;
+  right: 10px;
+  top: 20px;
 }
 
 .icon__menu-img {
+  color: black;
   cursor: pointer;
   height: 36px;
   margin-right: 10px;
@@ -395,11 +404,11 @@
 .card__content .card__description .card__description-text {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
-  width: 200px;
+  width: 260px;
 }
 .card__content .card__description .card__description-botton {
   background-color: transparent;
@@ -811,6 +820,98 @@
   .contact__links .button__link .contact__links-icon {
     width: 20px;
     height: 20px;
+  }
+}
+.portfolio__item {
+  background-color: #001551;
+  padding: 100px;
+}
+
+.portfolio__items {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.porfolio__item-image {
+  margin-top: -120px;
+}
+
+.portfolio__item-description {
+  margin-top: -40px;
+  width: 60%;
+}
+.portfolio__item-description .portfolio__item-description--title {
+  color: #001551;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.portfolio__item-description .portfolio__item-description--subtitle {
+  color: #293a66;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.portfolio__item-carousel {
+  box-shadow: 0 5px 15px black;
+  margin-top: 16px;
+  width: 60%;
+}
+
+.portfolio__button-code {
+  align-items: center;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-radius: 30px;
+  font-size: 20px;
+  border: 2px solid #001551;
+  color: #001551;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+.portfolio__button-code:hover {
+  background-color: #001551;
+  color: white;
+  box-shadow: 0 5px 15px black;
+}
+
+.portfolio__item-description--voltar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.portfolio__item-description--voltar p {
+  color: black;
+}
+.portfolio__item-description--voltar p:hover {
+  color: #293a66;
+}
+
+@media (max-width: 1000px) {
+  .portfolio__item-description {
+    margin-top: -20px;
+    width: 80%;
+  }
+  .portfolio__item-carousel {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .portfolio__item-description {
+    margin-top: 0;
+  }
+  .portfolio__item-carousel {
+    width: 100%;
+  }
+  .portfolio__button-code {
+    font-size: 16px;
+    padding: 10px 10px;
   }
 }
 

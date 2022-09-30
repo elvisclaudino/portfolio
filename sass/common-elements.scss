@@ -11,3 +11,12 @@
 .black__color {
   color: black;
 }
+
+.link {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}

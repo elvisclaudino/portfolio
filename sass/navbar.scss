@@ -3,11 +3,12 @@
   font-family: $font;
   font-weight: 500;
   position: fixed;
-  right: 0;
-  top: 10px;
+  right: 10px;
+  top: 20px;
 }
 
 .icon__menu-img {
+  color: black;
   cursor: pointer;
   height: 36px;
   margin-right: 10px;

@@ -3,11 +3,11 @@
 }
 
 .container__info {
-  padding-top: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  padding-top: 140px;
 
   .header__title {
     color: $primary-color;
@@ -37,8 +37,8 @@
     .header__description-paragraph {
       color: white;
       cursor: pointer;
-      font-size: 25px;
       font-family: $font;
+      font-size: 25px;
       font-weight: 500;
       transition: 0.3s all;
 

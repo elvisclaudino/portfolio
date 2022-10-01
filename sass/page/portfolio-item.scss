@@ -4,11 +4,11 @@
 }
 
 .portfolio__items {
+  align-items: center;
   background-color: white;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .porfolio__item-image {
@@ -68,28 +68,28 @@
 
 .portfolio__button-code {
   align-items: center;
+  border: 2px solid $primary-color;
+  border-radius: 30px;
+  color: $primary-color;
   display: flex;
+  font-size: 20px;
+  font-weight: 500;
   margin-top: 32px;
   margin-bottom: 32px;
-  border-radius: 30px;
-  font-size: 20px;
-  border: 2px solid $primary-color;
-  color: $primary-color;
-  font-weight: 500;
   padding: 10px 25px;
 
   &:hover {
     background-color: $primary-color;
-    color: white;
     box-shadow: 0 5px 15px black;
+    color: white;
   }
 }
 
 .portfolio__item-description--voltar {
+  cursor: pointer;
   font-family: $font;
   font-weight: 500;
   font-size: 16px;
-  cursor: pointer;
 
   p {
     color: black;

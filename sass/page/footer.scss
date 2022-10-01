@@ -36,27 +36,27 @@
 }
 
 .container__footer-items {
-  margin-top: 20px;
   background-color: $primary-color;
+  margin-top: 20px;
 }
 
 .contact__infos {
-  padding-top: 120px;
   display: flex;
   justify-content: center;
+  padding-top: 120px;
   .contact__infos-item {
-    width: 300px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
 
     .contact__title {
-      font-family: $font;
       color: $paragraph-color;
-      font-weight: 600;
+      font-family: $font;
       font-size: 20px;
+      font-weight: 600;
     }
 
     .contact__paragraph {
@@ -70,9 +70,9 @@
   justify-content: center;
   margin-top: 60px;
   .button__link {
+    border-radius: 100%;
     display: flex;
     padding: 16px;
-    border-radius: 100%;
   }
 }
 
@@ -81,8 +81,8 @@
   justify-content: center;
   padding: 20px;
   .copy__text {
-    font-family: $font;
     color: $paragraph-color;
+    font-family: $font;
     font-weight: 700;
   }
 }
@@ -103,8 +103,8 @@
     .button__link {
       padding: 16px;
       .contact__links-icon {
-        width: 25px;
         height: 25px;
+        width: 25px;
       }
     }
   }
@@ -121,8 +121,8 @@
 
 @media (max-width: 500px) {
   .footer__description .footer__description-title {
-    margin: 20px;
     font-size: 20px;
+    margin: 20px;
   }
 
   .footer__description .footer__description-desc {
@@ -130,9 +130,9 @@
   }
 
   .contact__infos {
-    padding-top: 0;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    padding-top: 0;
 
     .contact__infos-item {
       margin-top: 50px;
@@ -145,8 +145,8 @@
     .button__link {
       padding: 12px;
       .contact__links-icon {
-        width: 20px;
         height: 20px;
+        width: 20px;
       }
     }
   }
@@ -164,8 +164,8 @@
     .button__link {
       padding: 6px;
       .contact__links-icon {
-        width: 20px;
         height: 20px;
+        width: 20px;
       }
     }
   }

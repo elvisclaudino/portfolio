@@ -8,18 +8,18 @@
 
 h1 {
   color: var(--branca);
-  margin-bottom: 10px;
   font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .teclado {
-  margin-top: -80px;
   background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
-  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
   border-radius: 30px;
+  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: -80px;
   padding: 10px;
 }
 
@@ -29,9 +29,9 @@ h1 {
   box-shadow: 3px 3px 0 var(--cinza);
   color: var(--vermelha);
   cursor: pointer;
-  height: 120px;
   font-size: 1.75em;
   font-weight: bold;
+  height: 120px;
   line-height: 120px;
   text-align: center;
   width: 120px;
@@ -48,8 +48,8 @@ h1 {
 
 .tecla.focus,
 .tecla:focus {
-  outline: none;
   box-shadow: 1px 1px 10px var(--luz);
+  outline: none;
 }
 
 .tecla.active:focus,
@@ -60,30 +60,30 @@ h1 {
 @media (max-width: 500px) {
   .teclado {
     box-shadow: 6px 8px 0 1px #666, 10px 10px 10px #000;
-    width: 300px;
     height: 300px;
+    width: 300px;
   }
 
   .tecla {
     border-radius: 20px;
-    width: 80px;
-    height: 80px;
     font-size: 16px;
+    height: 80px;
     line-height: 40px;
+    width: 80px;
   }
 }
 
 @media (max-width: 400px) {
   .teclado {
-    width: 200px;
     height: 200px;
+    width: 200px;
   }
 
   .tecla {
     border-radius: 10px;
-    width: 50px;
-    height: 50px;
     font-size: 10px;
+    height: 50px;
     line-height: 20px;
+    width: 50px;
   }
 }

@@ -19,8 +19,8 @@
     align-items: flex-start;
     display: flex;
     height: 180px;
-    width: 700px;
     margin: 0 0 30px 0;
+    width: 700px;
   }
 
   .container__about-image {
@@ -113,9 +113,9 @@
   .container__about-description {
     .container__about-text {
       align-items: flex-start;
+      height: auto;
       justify-content: center;
       width: auto;
-      height: auto;
 
       .container__about-image {
         width: 100px;
@@ -123,8 +123,8 @@
 
       .container__about-paragraph {
         font-size: 14px;
-        width: 300px;
         line-height: 20px;
+        width: 300px;
       }
     }
 
@@ -197,8 +197,8 @@
           }
 
           .profile__title-pin {
-            margin-top: -4px;
             font-size: 14px;
+            margin-top: -4px;
           }
         }
       }

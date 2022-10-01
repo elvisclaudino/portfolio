@@ -15,6 +15,10 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+
+    <!-- CSS AOS Animate-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Elvis Claudino | Portfolio</title>
   </head>
   <body>
@@ -38,11 +42,17 @@
           <h1 class="header__title">
             Hello, my name is <span class="black__color">Elvis</span>.
           </h1>
-          <p class="header__paragraph">
+          <p class="header__paragraph" id="simpleUsage">
             I am a student of information systems at
             <span class="black__color">PUC-PR</span>
           </p>
-          <img src="./img/avatar.png" alt="" class="img-fluid header__image" />
+          <img
+            src="./img/avatar.png"
+            alt=""
+            class="img-fluid header__image"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          />
         </div>
         <div class="header__description">
           <a href="#about"
@@ -167,7 +177,7 @@
         <div class="card__content">
           <div class="card__description text-center">
             <p class="card__description-text">
-              Project carried out in a course.
+              Project carried out in the JavaScript for the Web course at Alura.
             </p>
             <a href="./pages/soundpad.html"
               ><button class="card__description-botton">View more</button></a
@@ -177,7 +187,8 @@
         <div class="card__content">
           <div class="card__description text-center">
             <p class="card__description-text">
-              Project carried out in a course.
+              Project carried out in the bootstrap module of the OneBitCode
+              course.
             </p>
             <a href="./pages/onebitx.html"
               ><button class="card__description-botton">View more</button></a
@@ -187,7 +198,8 @@
         <div class="card__content">
           <div class="card__description text-center">
             <p class="card__description-text">
-              Project carried out in a course.
+              Project carried out in the bootstrap module of the OneBitCode
+              course.
             </p>
             <a href="./pages/onebitx-register.html"
               ><button class="card__description-botton">View more</button></a
@@ -197,7 +209,8 @@
         <div class="card__content">
           <div class="card__description text-center">
             <p class="card__description-text">
-              Project carried out in a course.
+              Project carried out in the responsiveness module of the Alura
+              course.
             </p>
             <a href="./pages/apeperia.html"
               ><button class="card__description-botton">View more</button></a
@@ -207,7 +220,7 @@
         <div class="card__content">
           <div class="card__description text-center">
             <p class="card__description-text">
-              Project carried out in a course.
+              Project carried out in the JavaScript module of the Alura course.
             </p>
             <a href="./pages/regular-expressions.html"
               ><button class="card__description-botton">View more</button></a
@@ -217,7 +230,8 @@
         <div class="card__content">
           <div class="card__description text-center">
             <p class="card__description-text">
-              Project carried out in a course.
+              Project carried out in the CSS architecture module of the Alura
+              course.
             </p>
             <a href="./pages/fruta&fruto.html"
               ><button class="card__description-botton">View more</button></a
@@ -228,7 +242,7 @@
         <div class="card__content">
           <div class="card__description text-center">
             <p class="card__description-text">
-              Project carried out in a course.
+              Project carried out in the HTML/CSS module of the Alura course.
             </p>
             <a href="./pages/alura-barber.html"
               ><button class="card__description-botton">View more</button></a
@@ -456,11 +470,26 @@
 
     <!-- Script Link -->
     <script src="./js/index.js"></script>
+
     <!-- Script Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Script AOS Animate-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Script TypeIt -->
+    <script
+      crossorigin="anonymous"
+      src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"
+      defer
+    ></script>
+    <script src="./js/type.js" defer></script>
   </body>
 </html>

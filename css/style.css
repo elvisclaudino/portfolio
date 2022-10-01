@@ -141,6 +141,9 @@
   .container__info .header__paragraph {
     font-size: 18px;
   }
+  .container__info .header__image {
+    margin-top: 0;
+  }
 }
 @media (max-width: 400px) {
   .container__info .header__title {

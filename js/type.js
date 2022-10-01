@@ -1,4 +1,4 @@
 new TypeIt("#simpleUsage", {
-  speed: 30,
+  speed: 50,
   waitUntilVisible: true,
 }).go();
